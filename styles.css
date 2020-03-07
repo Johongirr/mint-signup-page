@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+fieldset {
+    border: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* css variables */
+:root {
+    --primary-color:#505050;
+    --secondary-color: #0077c5;
+    --color-white: #fff;
+}
+
+body {
+    background-color: #eceef1;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+button {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+    border: 1px solid #4c4c4c;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* privacy-settings  */
+.privacy-settings {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+.privacy-settings a {
+    color: #fff;
+}
+/* header */
+.header {
+    padding: 1rem 2rem;
+
+}
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header .header-signin {
+    float: right;
+    display: flex;
+}
+.header .header-signin div {
+    font-size: 0.9rem;
+}
+.header .header-signin div span{
+    display: block;
+    color: var(--primary-color);
+}
+.header .header-signin a {
+    color: var(--secondary-color);
+}
+.header #signin-btn {
+    margin-left: 1rem;
+    padding: 0.6rem 1.3rem;
+}
+
+.header #signin-btn:focus {
+    outline: none;
+}
+
+/* signup card */
+.signup-form {
+    margin-top: 1.5rem;
+}
+.card-container {
+    width: 400px;
+    margin: 0 auto;
+}
+.signup-card label p {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+.card-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.card-container .icons-container {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+.card-container .icons-container .round{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin: 0.4rem;
+    color: #fff;
+}
+
+.card-container .icons-container .round-1{
+    background-color: var(--secondary-color);
+   
+}
+.card-container .icons-container .round-2{
+    background-color: green;
+   
+}
+.card-container .icons-container .round-3{
+    background-color: red;
+   
+}
+.card-container .icons-container .text-md {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.card-container .signup-card {
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    background-color: var(--color-white);
+}
+.card-container .signup-card form {
+    padding: 2rem 2rem;
+}
+.card-container form h2 {
+    margin-bottom: 1rem;
+}
+.card-container form legend{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+.card-container form a {
+    color: var(--secondary-color);
+}
+.card-container fieldset label {
+    display: block;
+    margin-bottom: 2rem;
+}
+.card-container fieldset input {
+    display: block;
+    margin-top: 0.7rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+/* submit button */
+#submit-btn {
+    display: block;
+    padding: 1rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+/* form agreement */
+#agreement-term {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: var(--primary-color);
+}
+/* form footer*/
+.signup-card footer {
+   background-color: #eceef1;
+   font-size: 0.7rem;
+   color: var(--primary-color);
+   padding: 1rem 2rem;
+}
+.signup-card footer a {
+    color: var(--secondary-color);
+}
+
+/* footer */
+.footer {
+    max-width: 960px;
+    margin: 2rem auto;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+.footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.footer ul li {
+    padding: 0 0.8rem;
+}
+.footer ul a:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+.footer .footer-copyright {
+    text-align: center;
+    padding-top: 0.4rem;
+}
+.footer .fa-heart {
+    color: red;
+}
+
+/* media queries */
+@media (max-width: 800px)
+{
+    .header {
+        display: none;
+    }
+    .footer {
+        max-width: 660px;
+    }
+}
